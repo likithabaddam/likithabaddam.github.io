@@ -7,96 +7,97 @@
     <style>
         /* Inline CSS styles go here */
         /* Place your CSS styles inside the <style> tags */
-/* Reset some default styles */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
+        /* Add your CSS styles here */
 
-/* Define basic styles for the header */
-header {
-    background-image: url('header-background.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
 
-.logo img {
-    max-width: 100px;
-}
+        /* Define basic styles for the header */
+        header {
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-nav ul {
-    list-style: none;
-}
+        .logo img {
+            max-width: 100px;
+        }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
+        nav ul {
+            list-style: none;
+        }
 
-/* Define styles for the hero section */
-.hero {
-    text-align: center;
-    padding: 100px 0;
-}
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-.btn {
-    background-color: #ff3366;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    font-weight: bold;
-}
+        /* Define styles for the hero section */
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
 
-/* Define styles for the video section */
-.video {
-    text-align: center;
-    padding: 50px 0;
-}
+        .btn {
+            background-color: #ff3366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-/* Define styles for other sections (products, about us, etc.) */
+        /* Define styles for the video section */
+        .video {
+            text-align: center;
+            padding: 50px 0;
+        }
 
-/* Define styles for the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Define styles for other sections (products, about us, etc.) */
 
-.contact, .subscribe {
-    flex: 1;
-    margin-right: 20px;
-}
+        /* Define styles for the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.subscribe input {
-    padding: 10px;
-    width: 100%;
-    border: none;
-    margin-bottom: 10px;
-}
+        .contact, .subscribe {
+            flex: 1;
+            margin-right: 20px;
+        }
 
-.subscribe button {
-    background-color: #ff3366;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    font-weight: bold;
-}
+        .subscribe input {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            margin-bottom: 10px;
+        }
 
+        .subscribe button {
+            background-color: #ff3366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Beauty Products Logo">
+            <img src="logo.png" alt="Beauty Products Logo" aria-label="Beauty Products Logo">
         </div>
         <nav>
             <ul>
@@ -136,7 +137,7 @@ footer {
         </div>
         <div class="subscribe">
             <h3>Subscribe to our Newsletter</h3>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" placeholder="Enter your email" aria-label="Email Subscription Input">
             <button>Subscribe</button>
         </div>
     </footer>
